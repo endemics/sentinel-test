@@ -6,7 +6,6 @@ RUN apk add --no-cache curl && \
     rm sentinel.zip
 COPY . /go/src/sentinel-test
 WORKDIR /go/src/sentinel-test
-RUN go test
 RUN go install sentinel-test
 
 FROM alpine:3.7
