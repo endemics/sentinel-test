@@ -41,7 +41,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:b5fc166ecb4047086ae1814f73601706aa528dcdd5399ef274605b0666862daf"
+  digest = "1:6e4812aac2c2e74df23feb2de9ed103d51fb028158461b103937b337574d87b3"
   name = "github.com/hashicorp/sentinel-sdk"
   packages = [
     ".",
@@ -49,6 +49,7 @@
     "framework",
     "proto/go",
     "rpc",
+    "testing",
   ]
   pruneopts = "UT"
   revision = "c78efd1fe64733e83f259a356b5b6be26a00db84"
@@ -203,6 +204,7 @@
     "github.com/hashicorp/sentinel-sdk",
     "github.com/hashicorp/sentinel-sdk/framework",
     "github.com/hashicorp/sentinel-sdk/rpc",
+    "github.com/hashicorp/sentinel-sdk/testing",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
