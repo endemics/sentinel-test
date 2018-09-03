@@ -1,0 +1,4 @@
+import "time2"
+
+error(time2.minute)
+main = true

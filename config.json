@@ -1,0 +1,7 @@
+{
+"imports":{
+    "time2": {
+        "path": "/usr/local/bin/sentinel-test"
+        }
+    }
+}
