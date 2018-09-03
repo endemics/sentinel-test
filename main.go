@@ -41,6 +41,22 @@ func (m *root) Get(key string) (interface{}, error) {
 	switch key {
 	case "minute":
 		return m.time.Minute(), nil
+	case "month":
+		return &namespaceMonth{Month: m.time.Month()}, nil
+	}
+
+	return nil, nil
+}
+
+type namespaceMonth struct{ Month time.Month }
+
+func (m *namespaceMonth) Get(key string) (interface{}, error) {
+	switch key {
+	case "string":
+		return m.Month.String(), nil
+
+	case "index":
+		return int(m.Month), nil
 	}
 
 	return nil, nil
