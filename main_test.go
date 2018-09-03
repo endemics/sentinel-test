@@ -4,7 +4,6 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hashicorp/sentinel-sdk"
 	plugintesting "github.com/hashicorp/sentinel-sdk/testing"
 )
 
